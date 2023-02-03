@@ -55,6 +55,11 @@ def run_assistant():
         search = command.replace('what is', '')
         talk('search' + search)
         pywhatkit.search(search)
+
+    if 'hello' in command:
+        talk('Hi there')
+        print('Hi there')
+
     else:
         talk('Please say the command again')
 
